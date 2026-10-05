@@ -2,6 +2,7 @@
 add_filter('show_admin_bar', '__return_false');
 
 require_once get_template_directory() . '/includes/enques.php';
+require_once get_template_directory() . '/includes/city-fields.php';
 
 add_filter('intermediate_image_sizes_advanced', 'tachomind_remove_default_images');
 // Remove default image sizes here. 
