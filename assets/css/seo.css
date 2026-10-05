@@ -1,0 +1,688 @@
+    /* ============================================================
+   TACHOMIND - SEO PAGE STYLES
+   ============================================================ */
+
+#seo-hero-banner .seo-hero{
+    position: relative;
+    padding: 124px 48px 84px;
+    overflow: hidden;
+    background: linear-gradient(160deg, #0f172a 0%, #1e293b 100%)!important;
+}
+
+#seo-hero-banner .seo-hero-dot-grid {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+#seo-hero-banner .seo-hero-glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(ellipse 70% 60% at 50% 18%, rgba(37, 99, 235, 0.2) 0%, transparent 70%);
+}
+
+#seo-hero-banner .seo-hero-inner,
+#seo-hero-banner .seo-two-col,
+#seo-hero-banner .seo-section-head,
+#seo-hero-banner .seo-package-grid,
+#seo-hero-banner .seo-services-grid,
+#seo-hero-banner .seo-faq-list,
+#seo-hero-banner .seo-cta-inner {
+    position: relative;
+    z-index: 1;
+}
+
+#seo-hero-banner .seo-hero-inner {
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+#seo-hero-banner .seo-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 0.75rem;
+    margin-bottom: 24px;
+}
+
+#seo-hero-banner .seo-breadcrumb a {
+    color: #64748b;
+}
+
+#seo-hero-banner .seo-breadcrumb a:hover {
+    color: #60a5fa;
+}
+
+#seo-hero-banner .seo-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) 420px;
+    gap: 64px;
+    align-items: center;
+}
+
+#seo-hero-banner .seo-hero-badge,
+#seo-hero-banner .seo-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.72rem;
+}
+
+#seo-hero-banner .seo-hero-badge {
+    padding: 6px 16px;
+    color: #93c5fd;
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    background: rgba(37, 99, 235, 0.15);
+    margin-bottom: 22px;
+}
+
+#seo-hero-banner .seo-hero h1 {
+    color: #fff;
+    font-size: clamp(2rem, 4.5vw, 3.45rem);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    font-weight: 900;
+    max-width: 760px;
+    margin-bottom: 18px;
+}
+
+#seo-hero-banner .seo-hero p {
+    color: #94a3b8;
+    max-width: 620px;
+    font-size: 0.96rem;
+    line-height: 1.76;
+    margin-bottom: 18px;
+}
+
+#seo-hero-banner .seo-price-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 40px;
+    padding: 8px 14px;
+    color: #dbeafe;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    font-size: 0.84rem;
+    margin-bottom: 26px;
+}
+
+#seo-hero-banner .seo-price-pill strong {
+    color: #60a5fa;
+}
+
+#seo-hero-banner .seo-hero-actions,
+#seo-hero-banner .seo-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+#seo-hero-banner .seo-btn-primary,
+#seo-hero-banner .seo-btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 200ms ease, background 200ms ease;
+}
+
+#seo-hero-banner .seo-btn-primary {
+    color: #fff;
+    background: #2563eb;
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+}
+
+#seo-hero-banner .seo-btn-ghost {
+    color: #e2e8f0;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+#seo-hero-banner .seo-btn-primary:hover,
+.seo-btn-ghost:hover {
+    transform: scale(1.04);
+}
+
+#seo-hero-banner .seo-proof-panel {
+    display: grid;
+    gap: 16px;
+}
+
+#seo-hero-banner .seo-proof-card {
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#seo-hero-banner .seo-proof-card span {
+    display: block;
+    color: #64748b;
+    font-size: 0.76rem;
+    margin-bottom: 6px;
+}
+
+#seo-hero-banner .seo-proof-card strong {
+    color: #fff;
+    font-size: 1.18rem;
+}
+
+#seo-hero-banner .seo-intro,
+#seo-hero-banner .seo-plan-details {
+    padding: 82px 48px;
+    background: #fff;
+}
+
+#seo-hero-banner .seo-two-col {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 420px minmax(0, 1fr);
+    gap: 56px;
+    align-items: center;
+}
+
+#seo-hero-banner .seo-two-col.reverse {
+    grid-template-columns: minmax(0, 1fr) 420px;
+}
+
+#seo-hero-banner .seo-image-card {
+    height: 320px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.09);
+}
+
+/*#seo-hero-banner .seo-image-card img {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+/*}*/
+
+#seo-hero-banner .seo-kicker {
+    padding: 5px 12px;
+    color: #2563eb;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    margin-bottom: 14px;
+}
+
+#seo-hero-banner .seo-copy h2,
+#seo-hero-banner .seo-section-head h2 {
+    color: #0f172a;
+    font-size: clamp(1.45rem, 3vw, 2.25rem);
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+#seo-hero-banner .seo-copy p,
+#seo-hero-banner .seo-section-head p,
+#seo-hero-banner .seo-services-grid p,
+#seo-hero-banner .seo-faq p {
+    color: #475569;
+    font-size: 0.9rem;
+    line-height: 1.78;
+    margin-bottom: 14px;
+}
+
+#seo-hero-banner .seo-pricing,
+#seo-hero-banner .seo-services,
+#seo-hero-banner .seo-faq {
+    padding: 78px 48px;
+    background: #f8fafc;
+}
+
+#seo-hero-banner .seo-section-head {
+    max-width: 760px;
+    margin: 0 auto 38px;
+    text-align: center;
+}
+
+#seo-hero-banner .seo-package-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#seo-hero-banner .seo-package-card,
+#seo-hero-banner .seo-services-grid article,
+#seo-hero-banner .seo-faq details {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+}
+
+#seo-hero-banner .seo-package-card {
+    overflow: hidden;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+#seo-hero-banner .seo-package-card.featured {
+    border-color: rgba(37, 99, 235, 0.35);
+    box-shadow: 0 16px 38px rgba(37, 99, 235, 0.18);
+    transform: translateY(-6px);
+}
+
+#seo-hero-banner .seo-package-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 17px 18px;
+    background: linear-gradient(135deg, #1d4ed8 0%, #0891b2 100%);
+}
+
+#seo-hero-banner .seo-package-top span {
+    display: inline-flex;
+    min-width: 38px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
+    font-size: 0.82rem;
+    font-weight: 900;
+}
+
+#seo-hero-banner .seo-package-top strong {
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+#seo-hero-banner .seo-package-card ul {
+    display: grid;
+    gap: 10px;
+    padding: 18px;
+    flex: 1;
+}
+
+#seo-hero-banner .seo-package-card li,
+#seo-hero-banner .seo-checklist div {
+    position: relative;
+    color: #334155;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    padding-left: 22px;
+}
+
+#seo-hero-banner .seo-package-card li::before,
+#seo-hero-banner .seo-checklist div::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    background: #2563eb;
+}
+
+#seo-hero-banner .seo-package-card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    margin: 0 18px 18px;
+    border-radius: 8px;
+    color: #fff;
+    background: #2563eb;
+    font-size: 0.82rem;
+    font-weight: 800;
+}
+
+#seo-hero-banner .seo-services-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+#seo-hero-banner .seo-services-grid article {
+    border-radius: 12px;
+    padding: 20px;
+}
+
+#seo-hero-banner .seo-services-grid span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    color: #2563eb;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    font-size: 0.74rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+#seo-hero-banner .seo-services-grid h3 {
+    color: #0f172a;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+#seo-hero-banner .seo-checklist {
+    display: grid;
+    gap: 12px;
+    padding: 24px;
+    border-radius: 12px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+}
+
+#seo-hero-banner .seo-faq-list {
+    max-width: 720px;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+}
+
+#seo-hero-banner .seo-faq details {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#seo-hero-banner .seo-faq summary {
+    cursor: pointer;
+    color: #0f172a;
+    font-weight: 800;
+    font-size: 0.86rem;
+    padding: 16px 44px 16px 18px;
+    list-style: none;
+    position: relative;
+    user-select: none;
+}
+
+#seo-hero-banner .seo-faq summary::after {
+    content: "+";
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+#seo-hero-banner .seo-faq details[open] summary::after {
+    content: "-";
+}
+
+#seo-hero-banner .seo-faq summary::-webkit-details-marker {
+    display: none;
+}
+
+#seo-hero-banner .seo-faq p {
+    padding: 0 18px 16px;
+    margin: 0;
+}
+
+#seo-hero-banner .seo-contact-strip {
+    padding: 26px 48px;
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    background: #fff;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+#seo-hero-banner #seo-hero-banner .seo-contact-strip a {
+    color: #334155;
+    font-size: 0.84rem;
+    font-weight: 800;
+}
+
+#seo-hero-banner .seo-cta {
+    position: relative;
+    overflow: hidden;
+    padding: 76px 48px;
+    background: linear-gradient(160deg, #0f172a 0%, #1e293b 100%);
+}
+
+#seo-hero-banner .seo-cta-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#seo-hero-banner .seo-cta h2 {
+    color: #fff;
+    font-size: clamp(1.5rem, 3vw, 2.4rem);
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+#seo-hero-banner .seo-cta h2 span {
+    color: #60a5fa;
+}
+
+#seo-hero-banner .seo-cta p {
+    color: #94a3b8;
+    margin-bottom: 24px;
+}
+
+#seo-hero-banner .seo-cta-actions {
+    justify-content: center;
+}
+
+@media (max-width: 1023px) {
+    #seo-hero-banner .seo-hero-grid,
+    #seo-hero-banner .seo-two-col,
+    #seo-hero-banner .seo-two-col.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    #seo-hero-banner .seo-proof-panel {
+        max-width: 560px;
+    }
+
+    #seo-hero-banner .seo-package-grid,
+    #seo-hero-banner .seo-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    #seo-hero-banner .seo-hero,
+    #seo-hero-banner .seo-intro,
+    #seo-hero-banner .seo-pricing,
+    #seo-hero-banner .seo-services,
+    #seo-hero-banner .seo-plan-details,
+    #seo-hero-banner .seo-faq,
+    #seo-hero-banner .seo-cta {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #seo-hero-banner .seo-hero {
+        padding-top: 96px;
+        padding-bottom: 56px;
+    }
+
+    #seo-hero-banner .seo-package-grid,
+    #seo-hero-banner .seo-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #seo-hero-banner .seo-package-card.featured {
+        transform: none;
+    }
+
+    #seo-hero-banner .seo-image-card {
+        height: 240px;
+    }
+
+    #seo-hero-banner .seo-contact-strip {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 22px 16px;
+        text-align: center;
+    }
+}
+
+
+#seo-hero-banner .tm-seo-container {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+#seo-hero-banner .tm-seo-faq-section {
+  padding: 90px 0;
+  background: #f8fbff;
+}
+
+#seo-hero-banner .tm-seo-section-head {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 42px;
+}
+
+#seo-hero-banner .tm-seo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #eef5ff;
+  color: #2563eb;
+  border: 1px solid #d9e8ff;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+#seo-hero-banner .tm-seo-section-head h2 {
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.1;
+  margin: 0 0 14px;
+  color: #08111f;
+}
+
+#seo-hero-banner .tm-seo-section-head p {
+  margin: 0;
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+#seo-hero-banner .tm-seo-faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+#seo-hero-banner .tm-seo-faq-item {
+  background: #ffffff;
+  border: 1px solid #e5edf7;
+  border-radius: 18px;
+  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+#seo-hero-banner .tm-seo-faq-question {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  cursor: pointer;
+  text-align: left;
+  color: #0f172a;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+#seo-hero-banner .tm-seo-faq-question:focus {
+  outline: none;
+}
+
+#seo-hero-banner .tm-seo-faq-icon {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  border-radius: 50%;
+  background: #eef5ff;
+  color: #2563eb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+#seo-hero-banner .tm-seo-faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+#seo-hero-banner .tm-seo-faq-answer-inner {
+  overflow: hidden;
+}
+
+#seo-hero-banner .tm-seo-faq-answer p {
+  margin: 0;
+  padding: 0 24px 22px;
+  color: #526173;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+#seo-hero-banner .tm-seo-faq-item.active .tm-seo-faq-answer {
+  grid-template-rows: 1fr;
+}
+
+#seo-hero-banner .tm-seo-faq-item.active .tm-seo-faq-icon {
+  background: #2563eb;
+  color: #ffffff;
+  transform: rotate(45deg);
+}
+
+@media (max-width: 767px) {
+  #seo-hero-banner .tm-seo-faq-section {
+    padding: 60px 0;
+  }
+
+  #seo-hero-banner .tm-seo-faq-question {
+    padding: 18px;
+    font-size: 15px;
+  }
+
+  #seo-hero-banner .tm-seo-faq-answer p {
+    padding: 0 18px 18px;
+    font-size: 15px;
+  }
+}
