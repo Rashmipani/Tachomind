@@ -325,8 +325,8 @@ footer{background:#1F3FB8;color:#b9c6ea;padding:80px 0 30px;margin-top:110px}
 .kw{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 28px}
 .kw span{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:40px;background:var(--yellow);color:var(--night);font-weight:700;font-size:14px}
 .kw .ico{width:16px;height:16px}
-.areas-copy .area-keyword-buttons{display:flex;flex-wrap:nowrap;align-items:center;gap:8px}
-.areas-copy .area-keyword-buttons span{justify-content:center;text-align:center;white-space:nowrap;padding:8px 10px;font-size:12px}
+.areas-copy .area-keyword-buttons{display:flex;flex-wrap:nowrap;align-items:center;gap:6px}
+.areas-copy .area-keyword-buttons span{justify-content:center;text-align:center;white-space:nowrap;padding:7px 8px;font-size:11px}
 .area-list button span{font-size:16px;color:#c9c2ad}
 
 .contact .sub{color:#eef2ff}

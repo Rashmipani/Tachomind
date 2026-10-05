@@ -741,7 +741,7 @@ while (have_posts()) {
     <?php endif; ?>
 
     <!-- CASE STUDIES / INDUSTRIES -->
-    <section class="sec" id="industries">
+    <!-- <section class="sec" id="industries">
         <div class="wrap">
             <div class="slider-head rv">
                 <div>
@@ -854,7 +854,7 @@ while (have_posts()) {
                 <?php endif; ?>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- PLATFORMS -->
     <?php if ( $plats ) : ?>
@@ -961,6 +961,14 @@ while (have_posts()) {
 
     <!-- AREAS -->
     <?php if ( $area_list ) : ?>
+    <style id="city-areas-button-layout">
+        .city-page #areas .areas-copy .area-keyword-buttons{display:flex;flex-flow:row nowrap;align-items:center;gap:6px}
+        .city-page #areas .areas-copy .area-keyword-buttons>span{flex:0 1 auto;justify-content:center;text-align:center;white-space:nowrap;padding:7px 8px;font-size:11px}
+        @media(max-width:860px){
+            .city-page #areas .areas-copy .area-keyword-buttons{flex-direction:column;align-items:stretch}
+            .city-page #areas .areas-copy .area-keyword-buttons>span{width:100%;box-sizing:border-box;white-space:normal}
+        }
+    </style>
     <section class="sec" id="areas">
         <div class="wrap">
             <div class="areas-box rv">

@@ -11,7 +11,8 @@
         // The city stylesheet uses shared selectors, so keep all city assets on its template only.
         if (is_page_template('page-city.php')) {
             wp_enqueue_style('city-page-fonts', 'https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap', array(), null);
-            wp_enqueue_style('city-page', get_template_directory_uri() . '/assets/css/city.css', array('style', 'city-page-fonts'), '1.0.0');
+            $city_css_file = get_template_directory() . '/assets/css/city.css';
+            wp_enqueue_style('city-page', get_template_directory_uri() . '/assets/css/city.css', array('style', 'city-page-fonts'), file_exists($city_css_file) ? filemtime($city_css_file) : '1.0.0');
         }
 
 
@@ -30,7 +31,8 @@
         wp_enqueue_script('ppcjs');
         wp_enqueue_script('web-dev.js');
         if (is_page_template('page-city.php')) {
-            wp_enqueue_script('city-page', get_template_directory_uri() . '/assets/js/city.js', array(), '1.0.0', true);
+            $city_js_file = get_template_directory() . '/assets/js/city.js';
+            wp_enqueue_script('city-page', get_template_directory_uri() . '/assets/js/city.js', array(), file_exists($city_js_file) ? filemtime($city_js_file) : '1.0.0', true);
         }
 
 
