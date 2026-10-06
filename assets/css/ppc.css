@@ -1,0 +1,1124 @@
+/* ============================================================
+   TACHOMIND — PPC PAGE STYLES (ppc.css)
+   Loads after assets/css/style.css
+   ============================================================ */
+
+/* ============================================================
+   SECTION 1 — HERO (Dark Navy)
+   ============================================================ */
+
+.ppc-hero {
+  position: relative;
+  padding: 128px 48px 80px;
+  overflow: hidden;
+  background: linear-gradient(160deg, #0f172a 0%, #1e293b 100%);
+}
+
+.ppc-hero-dot-grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+    circle,
+    rgba(148, 163, 184, 0.07) 1px,
+    transparent 1px
+  );
+  background-size: 32px 32px;
+}
+
+.ppc-hero-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 70% 60% at 50% 20%,
+    rgba(37, 99, 235, 0.2) 0%,
+    transparent 70%
+  );
+}
+
+.ppc-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.ppc-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+  font-size: 0.75rem;
+}
+
+.ppc-breadcrumb-home {
+  color: #64748b;
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.ppc-breadcrumb-home:hover {
+  color: #60a5fa;
+}
+
+.ppc-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.ppc-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(37, 99, 235, 0.15);
+  color: #93c5fd;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  margin-bottom: 24px;
+}
+
+.ppc-hero-h1 {
+  font-size: clamp(1.9rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+}
+
+.ppc-white {
+  color: #fff;
+  display: block;
+}
+
+.ppc-grad {
+  display: block;
+  background: linear-gradient(135deg, #3b82f6 0%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ppc-hero-sub {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+
+.ppc-hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.ppc-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+  transition: transform 200ms ease;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.ppc-btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.ppc-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: background 200ms ease;
+  font-family: inherit;
+}
+
+.ppc-btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Hero right: single column stat cards */
+.ppc-hero-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.ppc-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ppc-stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ppc-stat-pre {
+  color: #64748b;
+  font-size: 0.7rem;
+  margin-bottom: 2px;
+}
+
+.ppc-stat-val {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+/* ============================================================
+   SHARED TYPOGRAPHY
+   ============================================================ */
+
+.ppc-h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.ppc-body-text {
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.ppc-body-text:last-of-type {
+  margin-bottom: 0;
+}
+
+.ppc-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: gap 200ms ease;
+}
+
+.ppc-text-link:hover {
+  gap: 10px;
+}
+
+/* ============================================================
+   SECTION 2 — GROW YOUR BUSINESS
+   Image LEFT / Text RIGHT
+   ============================================================ */
+
+.ppc-grow {
+  background: #fff;
+  padding: 96px 48px;
+}
+
+.ppc-grow-inner {
+  max-width: 1152px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.ppc-grow-img-col {
+  position: relative;
+}
+
+.ppc-grow-img-card {
+  border-radius: 16px;
+  overflow: hidden;
+  height: 460px;
+  box-shadow: 0 4px 32px rgba(15, 23, 42, 0.08);
+  border: 1px solid #f1f5f9;
+}
+
+.ppc-grow-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ppc-grow-text-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ppc-grow-text-col .section-badge {
+  margin-bottom: 16px;
+}
+
+/* ============================================================
+   SECTION 3 — PPC FEATURES (3×2 grid)
+   ============================================================ */
+
+.ppc-features {
+  padding: 96px 48px;
+}
+
+.ppc-features-inner {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.ppc-features-inner .section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.ppc-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.ppc-feature-card {
+  padding: 28px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  transition:
+    box-shadow 200ms ease,
+    transform 200ms ease;
+}
+
+.ppc-feature-card:hover {
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.08);
+  transform: translateY(-2px);
+}
+
+.ppc-feature-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.ppc-feature-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.ppc-feature-desc {
+  color: #475569;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+/* ============================================================
+   SECTION 4 & 5 — PACKAGES
+   ============================================================ */
+
+.ppc-packages {
+  padding: 96px 48px;
+  background: #fff;
+}
+
+.ppc-packages-inner {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.ppc-packages-h2 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin: 12px 0 32px;
+}
+
+.ppc-pkg-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Bar chart */
+.ppc-barchart {
+  margin-top: 28px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.ppc-barchart-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 14px;
+  letter-spacing: 0.02em;
+}
+
+.ppc-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 80px;
+}
+
+.ppc-bar-wrap {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.ppc-bar {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  background: #bfdbfe;
+  transition: background 200ms ease;
+}
+
+.ppc-bar--active {
+  background: #2563eb;
+}
+
+/* Pricing cards */
+.ppc-pkg-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ppc-price-card {
+  padding: 24px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  transition: box-shadow 200ms ease;
+}
+
+.ppc-price-card:hover {
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+}
+
+.ppc-price-card--featured {
+  border-color: #2563eb;
+  box-shadow:
+    0 0 0 2px rgba(37, 99, 235, 0.1),
+    0 8px 32px rgba(37, 99, 235, 0.12);
+  position: relative;
+}
+
+.ppc-price-popular {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 12px;
+  border-radius: 9999px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border: 1px solid #bfdbfe;
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ppc-price-tier {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.ppc-price-range {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.ppc-price-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ppc-price-features li {
+  font-size: 0.82rem;
+  color: #475569;
+  padding-left: 18px;
+  position: relative;
+}
+
+.ppc-price-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.ppc-price-btn {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 200ms ease,
+    background 200ms ease;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.ppc-price-btn:hover {
+  transform: scale(1.02);
+}
+
+.ppc-price-btn--outline {
+  border: 1px solid #e2e8f0;
+  color: #0f172a;
+  background: transparent;
+}
+
+.ppc-price-btn--outline:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.ppc-price-btn--filled {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.ppc-pkg-note {
+  margin-top: 16px;
+  font-size: 0.78rem;
+  color: #94a3b8;
+  text-align: right;
+  font-style: italic;
+}
+
+/* Instagram Mockup */
+.ppc-instagram-mock {
+  margin-top: 28px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  max-width: 320px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.ppc-insta-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: #f8fafc;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.ppc-insta-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ppc-insta-title {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.ppc-insta-body {
+  padding: 16px;
+  background: #fff;
+}
+
+.ppc-insta-post {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 1px solid #f1f5f9;
+}
+
+.ppc-insta-post-img {
+  height: 120px;
+  background: linear-gradient(135deg, #e0e7ff 0%, #fde8f0 100%);
+}
+
+.ppc-insta-post-actions {
+  display: flex;
+  gap: 12px;
+  padding: 8px 10px;
+}
+
+.ppc-insta-like,
+.ppc-insta-comment {
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+.ppc-insta-label {
+  font-size: 0.65rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+.ppc-insta-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ppc-insta-bar {
+  height: 8px;
+  border-radius: 4px;
+}
+
+/* ============================================================
+   SECTION 6 — IS IT WORTH INVESTING?
+   ============================================================ */
+
+.ppc-worth {
+  background: #fff;
+  padding: 96px 48px;
+}
+
+.ppc-worth-inner {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.ppc-worth-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.ppc-worth-text .section-badge {
+  margin-bottom: 16px;
+}
+
+.ppc-worth-img-col {
+  position: relative;
+}
+
+.ppc-worth-img-card {
+  border-radius: 16px;
+  overflow: hidden;
+  height: 400px;
+  box-shadow: 0 4px 32px rgba(15, 23, 42, 0.08);
+  border: 1px solid #f1f5f9;
+}
+
+.ppc-worth-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ad Types Grid: 2 cols */
+.ppc-ad-types-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ppc-ad-type-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  transition: box-shadow 200ms ease;
+}
+
+.ppc-ad-type-card:hover {
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+  background: #fff;
+}
+
+.ppc-ad-type-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ppc-ad-type-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.ppc-ad-type-desc {
+  color: #64748b;
+  font-size: 0.82rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ============================================================
+   SECTION 7 — HOW DOES PPC WORK?
+   ============================================================ */
+
+.ppc-how {
+  padding: 96px 48px;
+}
+
+.ppc-how-inner {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.ppc-how-inner .section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.ppc-how-h2 {
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-top: 10px;
+  margin-bottom: 0;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ppc-how-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.ppc-how-step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 28px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.ppc-how-step:last-child {
+  border-bottom: none;
+}
+
+.ppc-how-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ppc-how-text {
+  flex: 1;
+  padding-top: 4px;
+}
+
+.ppc-how-text .ppc-body-text {
+  margin-bottom: 0;
+}
+
+/* ============================================================
+   SECTION 8 — FAQ
+   ============================================================ */
+
+.ppc-faq-section {
+  background: #fff;
+  padding: 96px 48px;
+}
+
+.ppc-faq-inner {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.ppc-faq-inner .section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.ppc-faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ppc-faq-item {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ppc-faq-q {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f172a;
+  transition: color 200ms ease;
+}
+
+.ppc-faq-q:hover {
+  color: #2563eb;
+}
+
+.ppc-faq-chevron {
+  flex-shrink: 0;
+  color: #94a3b8;
+  transition: transform 200ms ease;
+}
+
+.ppc-faq-item.open .ppc-faq-chevron {
+  transform: rotate(180deg);
+}
+
+.ppc-faq-item.open .ppc-faq-q {
+  color: #2563eb;
+}
+
+.ppc-faq-a {
+  display: none;
+  padding: 0 0 20px 0;
+}
+
+.ppc-faq-a p {
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.ppc-faq-item.open .ppc-faq-a {
+  display: block;
+}
+
+/* ============================================================
+   CONTACT STRIP
+   ============================================================ */
+
+.ppc-contact-strip {
+  padding: 32px 48px;
+  background: #fff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ppc-contact-strip-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)!important;
+  gap: 20px;
+}
+
+.ppc-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  text-decoration: none;
+  transition: box-shadow 200ms ease;
+}
+
+.ppc-contact-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.ppc-contact-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #eff6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ppc-contact-lbl {
+  color: #94a3b8;
+  font-size: 0.7rem;
+  margin-bottom: 2px;
+}
+
+.ppc-contact-val {
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 0.88rem;
+  transition: color 200ms ease;
+}
+
+.ppc-contact-item:hover .ppc-contact-val {
+  color: #2563eb;
+}
+
+/* ============================================================
+   BOTTOM CTA (Dark)
+   ============================================================ */
+
+.ppc-bottom-cta {
+  padding: 80px 48px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  text-align: center;
+}
+
+.ppc-bottom-cta-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 60% 70% at 50% 50%,
+    rgba(37, 99, 235, 0.18) 0%,
+    transparent 70%
+  );
+}
+
+.ppc-bottom-cta-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.ppc-bottom-cta-h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.ppc-cta-grad {
+  background: linear-gradient(135deg, #3b82f6, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ppc-bottom-cta-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1023px) {
+  .ppc-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ppc-pkg-top {
+    gap: 32px;
+  }
+
+  .ppc-ad-types-grid {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Hero */
+  .ppc-hero {
+    padding: 88px 16px 48px;
+  }
+
+  .ppc-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .ppc-hero-sub {
+    max-width: 100%;
+  }
+
+  .ppc-hero-btns {
+    flex-direction: column;
+  }
+
+  .ppc-hero-btns a {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  /* Grow */
+  .ppc-grow {
+    padding: 64px 16px;
+  }
+
+  .ppc-grow-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .ppc-grow-img-card {
+    height: 280px;
+  }
+
+  /* Features */
+  .ppc-features {
+    padding: 64px 16px;
+  }
+
+  .ppc-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Packages */
+  .ppc-packages {
+    padding: 64px 16px;
+  }
+
+  .ppc-pkg-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .ppc-pkg-note {
+    text-align: left;
+  }
+
+  /* Worth */
+  .ppc-worth {
+    padding: 64px 16px;
+  }
+
+  .ppc-worth-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .ppc-worth-img-card {
+    height: 260px;
+  }
+
+  .ppc-ad-types-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* How */
+  .ppc-how {
+    padding: 64px 16px;
+  }
+
+  /* FAQ */
+  .ppc-faq-section {
+    padding: 64px 16px;
+  }
+
+  /* Contact strip */
+  .ppc-contact-strip {
+    padding: 24px 16px;
+  }
+
+  .ppc-contact-strip-inner {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Bottom CTA */
+  .ppc-bottom-cta {
+    padding: 64px 16px;
+  }
+
+  .ppc-bottom-cta-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ppc-bottom-cta-btns a {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+}

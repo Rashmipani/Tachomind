@@ -1,0 +1,26 @@
+/*
+Theme Name: TachoMind Business
+Theme URI: https://tachomind.com 
+Author: TachoMind
+Author URI: https://tachomind.com
+Description: Theme for Tachomind internal use. This is not available for public use.
+Version: 1.0
+License:
+License URI:
+Tags: Web Design, SEO, SMO, Ads Marketing, Web Hosting
+Text Domain: tachomind
+*/
+@import "./assets/css/home.css";
+@import "./assets/css/seo.css";
+@import "./assets/css/about.css";
+@import "./assets/css/digital-marketing.css";
+@import "./assets/css/seoarchieve.css";
+@import "./assets/css/ppc.css";
+@import "./assets/css/web-dev.css";
+@import "./assets/css/smo.css";
+@import "./assets/css/contact.css";
+@import "./assets/css/legal.css";
+@import "./assets/css/careers.css";
+@import "./assets/css/blog.css";
+@import "./assets/css/casestudies.css";
+@import "./assets/css/cancellation.css";
